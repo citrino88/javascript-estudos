@@ -1,1 +1,23 @@
-resp1_d.html
+<!-- Exercício opções de pagamento de uma loja
+ à vista, com 10% de desconto e em 3x
+ 
+Elabora um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista, com 10% de desconto e o valor em 3x.
+
+Vou acrescentar mais de um produto
+-->
+<meta charset="UTF-8">
+<script>
+    // ENTRADA
+    const valorProduto1 = Number(prompt('Digite o valor do 1º produto: '))
+    const valorProduto2 = Number(prompt('Digite o valor do 2º produto: '))
+    // PROCESSAMENTO
+    const totalProdutos = valorProduto1 + valorProduto2
+    const aVista = totalProdutos.toFixed(2)
+    const desconto = aVista * 0.90
+    const desconto10 = desconto.toFixed(2)
+    const divisao = aVista / 3
+    const parcelado = divisao.toFixed(2)
+    // SAÍDA
+    alert(`As opções de pagamento são:\nÀ vista R$ ${aVista}\nCom desconto de 10% R$ ${desconto10}\nOu em 3 parcelas de R$ ${parcelado} cada`)
+
+</script>
