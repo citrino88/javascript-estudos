@@ -1,0 +1,18 @@
+<!-- Elaborar um programa que leia o valor de um jantar. Calcular e informar o valor da taxa do garçon(10%) e o valor total a ser pago no final.
+ 
+Valor do jantar: R$ 90,00 (exemplo)-->
+
+<!-- Cálculo do valor do jantar -->
+
+<meta charset="UTF-8">
+<script>
+    // ENTRADA
+    const valorJantar = Number(prompt("Valor do jantar: "))
+    // PROCESSAMENTO
+    const taxaGarcon = valorJantar * 0.10
+    const valorTotal = valorJantar + taxaGarcon
+    // SAÍDA
+    alert(`A taxa do garçon é: R$ ${taxaGarcon.toFixed(2)}\nO Total é: R$ ${valorTotal.toFixed(2)}`)
+
+    //OBS: 1) \n para pular uma linha; 2) toFixed é para fixar quantas casas decimais queremos; 3) Na entrada devemos digitar número com . (padrão internacional para calcular) se digitamos, por exemplo 4,64 este número será dado como NaN.
+</script>
