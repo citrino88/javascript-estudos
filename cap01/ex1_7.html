@@ -11,8 +11,14 @@ Valor do jantar: R$ 90,00 (exemplo)-->
     // PROCESSAMENTO
     const taxaGarcon = valorJantar * 0.10
     const valorTotal = valorJantar + taxaGarcon
+    // outras duas soluções para valorTotal é
+    const total2 = valorJantar + (valorJantar * 0.10)
+    const total3 = valorJantar * 1.10
+
     // SAÍDA
     alert(`A taxa do garçon é: R$ ${taxaGarcon.toFixed(2)}\nO Total é: R$ ${valorTotal.toFixed(2)}`)
+
+    alert(`Outras duas saídas\n1) ${total2.toFixed(2)}\n2) ${total3.toFixed(2)}`)
 
     //OBS: 1) \n para pular uma linha; 2) toFixed é para fixar quantas casas decimais queremos; 3) Na entrada devemos digitar número com . (padrão internacional para calcular) se digitamos, por exemplo 4,64 este número será dado como NaN.
 </script>
