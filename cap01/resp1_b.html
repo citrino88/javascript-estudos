@@ -1,0 +1,14 @@
+<!-- Exercicio conta de restaurante por pessoa  
+ 
+Elaborar um programa para um restaurante, o qual leia o valor total de uma conta e quantos clientes vão pagá-la. Calcule e informe o valor a ser pago por cliente. -->
+
+<meta charset="UTF-8">
+<script>
+    // ENTRADA
+    const conta = Number(prompt('Valor da conta: '))
+    const numPagantes = Number(prompt('Nº de clientes pagantes: ')) 
+    // PROCESSAMENTO
+    const valorPorPagante = conta / numPagantes
+    // SAÍDA
+    alert(`O valor a ser pago por pessoa é R$ ${valorPorPagante.toFixed(2)}`)
+</script>
