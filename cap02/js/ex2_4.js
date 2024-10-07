@@ -15,6 +15,6 @@ frm.addEventListener('submit', (naoReload)=>{
     const valor = (quilo/1000)*consumo
 
     //SAÍDA
-    resp.innerText = `Valor a pagar R$ ${valor}`
+    resp.innerText = `Valor a pagar R$ ${valor.toFixed(2)}`
     naoReload.preventDefault()
 })
