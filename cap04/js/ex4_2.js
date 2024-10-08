@@ -13,16 +13,22 @@ form.addEventListener('submit', (naoReload) => {
     const altura = Number(form.inAltura.value)
 
     // processamento
-    let peso
+    let peso // declarada fora, se tivesse dentro do if else deveria repetir a saída, no if e no else. 
     if (masculino) { //(masculino == true)
         peso = 22 * Math.pow(altura, 2)
     } else {
         peso = 21 * Math.pow(altura, 2)
     }
+
+    /* RESOLUÇÃO COM USO DE OPERADOR TERNÁRIO
+    
+    variável = (condição) ? (comandos IF True) : (comandos ELSE False )
+
+    const peso = masculino ? 22 * Math.pow(altura, 2) : 21 * Math.pow(altura, 2) */
     
     // saída
     resp.innerText = `${nome} seu peso ideal é ${peso.toFixed(3)} kg`
 })
 form.addEventListener('reset', ()=>{
-    resp.innerText = ''
+    resp.innerText = '' //limpa o conteúdo dentro do  h3
 })
