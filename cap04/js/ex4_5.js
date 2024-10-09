@@ -15,3 +15,7 @@ form.addEventListener('submit', (noReload) =>{
         saida.innerText = `Não há raiz exata para ${numero}`
     }
 })
+/* observações
+Number.isInteger(numero): verifica se o número é inteiro
+outro jeito de verificar isso é
+(raiz % 1 == 0) */
