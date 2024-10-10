@@ -14,4 +14,17 @@ const parcelas = condicao20 == 0 ? 1 : condicao20 > 6 ? 6 : condicao20
 const valorParcela = total / parcelas
 console.log(`Pode pagar em ${parcelas}x de R$${valorParcela.toFixed(2)}`);
 
+/* observação:
+
+let parcelas
+if (condicao20 == 0){
+    parcelas = 1    
+} else if (condicao20 > 6){
+    parcelas = 6
+} else {
+    parcelas = condicao20
+}
+ 
+*/
+
 
